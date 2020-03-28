@@ -15,6 +15,7 @@ import { Page2Component } from './pages/page2/page2.component';
 import { Page3Component } from './pages/page3/page3.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { RegisterComponent } from './pages/register/register.component';
     ReactiveFormsModule,
     AmplifyAngularModule
   ],
-  providers: [AmplifyService],
+  providers: [AuthGuard, AmplifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

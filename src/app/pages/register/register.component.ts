@@ -45,6 +45,7 @@ export class RegisterComponent implements OnInit {
       .then(data => {
         console.log(data);
         alert('Utente Verificato!');
+        this.router.navigate(['/login']);
       })
       .catch(err => console.log(err));
   }

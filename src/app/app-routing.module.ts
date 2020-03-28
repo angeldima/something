@@ -7,12 +7,14 @@ import { Page3Component } from './pages/page3/page3.component';
 import { LayoutComponent } from './ui-template/layout/layout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {
     path: '',
+    canActivate: [AuthGuard],
     component: LayoutComponent,
     children: [
       { path: '', redirectTo: '/homepage', pathMatch: 'full' },

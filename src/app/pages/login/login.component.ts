@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Auth } from 'aws-amplify';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
   username = new FormControl('');
   password = new FormControl('');
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -25,6 +26,7 @@ export class LoginComponent implements OnInit {
       .then(user => {
         console.log(user);
         alert('Utente Verificato!');
+        this.router.navigate(['/homepage']);
       })
       .catch(err => console.log(err));
   }
