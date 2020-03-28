@@ -1,0 +1,20 @@
+{
+    "stag": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-something-app-stag-195604-authRole",
+            "UnauthRoleArn": "arn:aws:iam::162374837400:role/amplify-something-app-stag-195604-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::162374837400:role/amplify-something-app-stag-195604-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-something-app-stag-195604-deployment",
+            "UnauthRoleName": "amplify-something-app-stag-195604-unauthRole",
+            "StackName": "amplify-something-app-stag-195604",
+            "StackId": "arn:aws:cloudformation:eu-central-1:162374837400:stack/amplify-something-app-stag-195604/9d4776f0-705c-11ea-a46d-026925054f2e",
+            "AmplifyAppId": "dexi8hpohwcfi"
+        },
+        "categories": {
+            "auth": {
+                "somethingapp2957d643": {}
+            }
+        }
+    }
+}
