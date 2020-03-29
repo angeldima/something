@@ -1,4 +1,4 @@
-#Serverless User Authentication based on AWS Cognito and Amplify With Angular
+# Serverless User Authentication based on AWS Cognito and Amplify With Angular
 In this project we have implemented a serverless User Authentication solution, using:
 - AWS Amplify framework
 - AWS Cognito
