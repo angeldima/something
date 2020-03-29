@@ -31,11 +31,14 @@ export class RegisterComponent implements OnInit {
     Auth.signUp(user)
       .then(data => {
         console.log(data);
-        alert('Utente registrato!');
+        alert('Registration success!');
         this.registrationVisible = false;
         this.verifyRegistrationVisible = true;
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        alert('Registration failed!');
+        console.log(err);
+      });
   }
 
   verifyUser() {
@@ -44,9 +47,12 @@ export class RegisterComponent implements OnInit {
     })
       .then(data => {
         console.log(data);
-        alert('Utente Verificato!');
+        alert('Verification success!');
         this.router.navigate(['/login']);
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        alert('Verification failed!');
+        console.log(err);
+      });
   }
 }

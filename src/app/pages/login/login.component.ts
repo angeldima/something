@@ -25,9 +25,12 @@ export class LoginComponent implements OnInit {
     Auth.signIn(loginUser)
       .then(user => {
         console.log(user);
-        alert('Utente Verificato!');
+        alert('LogIn success!');
         this.router.navigate(['/homepage']);
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        console.log(err);
+        alert('LogIn failed!');
+      });
   }
 }
