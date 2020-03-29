@@ -12,7 +12,13 @@ export class HeaderComponent implements OnInit {
 
   logOutUser() {
     Auth.signOut()
-      .then(data => console.log(data))
-      .catch(err => console.log(err));
+      .then(data => {
+        console.log(data);
+        alert('LogOut success');
+      })
+      .catch(err => {
+        console.log(err);
+        alert('LogOut failed');
+      });
   }
 }
