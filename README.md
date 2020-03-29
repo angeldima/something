@@ -1,39 +1,45 @@
-# SomethingApp
+#Serverless User Authentication based on AWS Cognito and Amplify With Angular
+In this project we have implemented a serverless User Authentication solution, using:
+- AWS Amplify framework
+- AWS Cognito
+- Angular 8
+- Amplify JavaScript Libraries
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+The result is fully-functioning web application that includes:
+- User registration
+- Verify registration
+- User log in
+- User log out
 
-## Development server
+This application demonstrate how to build and provision AWS elements used in user authentication and how fast is to integrate Amplify functionality in an Angular application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Installing and configure Amplify CLI
+```shell
+	npm install -g @aws-amplify/cli
+```
 
-## Code scaffolding
+### Creating Angular Project
+```shell
+	npm install -g @angular/cli
+	ng new aws-amplify-cognito-authentication
+	cd aws-amplify-cognito-authentication
+	ng serve
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installing Amplify Libraries
+```shell
+	npm install aws-amplify aws-amplify-angular
+```
 
-## Build
+### Configure and provisioning the Auth Back End
+```shell
+	amplify
+	amplify configure
+	amplify init
+	amplify --help
+	amplify auth add
+	amplify push
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Amplify Setup
-
-amplify
-amplify configure
-amplify init
-amplify --help
-amplify auth add
-amplify push
-npm install aws-amplify aws-amplify-angular
-
-## Amplify Setup
+### Setup Angular Project and use Amplify Libraries
+https://aws-amplify.github.io/docs/js/angular
