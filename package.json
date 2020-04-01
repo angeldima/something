@@ -23,7 +23,8 @@
     "aws-amplify-angular": "^4.1.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@babel/compat-data": "~7.8.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.20",
